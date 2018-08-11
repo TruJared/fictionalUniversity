@@ -11,6 +11,9 @@ function university_files()
 function university_features()
 {
   add_theme_support('title-tag');
+  register_nav_menu('headerMenuLocation', 'Header Menu Location');
+  register_nav_menu('footerLocationCenterLeft', 'Footer Location Center Left');
+  register_nav_menu('footerLocationCenterRight', 'Footer Location Center Right');
 }
 
 //  load css and javascript files
@@ -18,4 +21,3 @@ add_action('wp_enqueue_scripts', 'university_files');
 
 //  dynamic page titles
 add_action('after_setup_theme', 'university_features');
-?>
