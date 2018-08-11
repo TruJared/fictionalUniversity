@@ -7,7 +7,7 @@
 		</h1>
 		<div class="page-banner__intro">
 			<p>
-				<?php the_archive_description(); ?>
+				<?php the_archive_description();  ?>
 			</p>
 		</div>
 	</div>
